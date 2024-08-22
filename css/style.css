@@ -91,13 +91,17 @@
 
     .dropdown-menu { 
         position: fixed; 
-        top: 0; 
         background-color: var(--main-bg); 
-        right: 0;  
+        top: 0; 
+        right: -110vw;  
         width: 60vw; 
-        height: 100vh;  
-        display: none;
-        
+        height: 100vh;     
+        transition: right .2s ease-in-out;
+    } 
+
+    .menu-active { 
+        top: 0; 
+        right: 0;  
     }
 
     .dropdown-menu ul li {  
@@ -226,7 +230,7 @@
         font-size: 4rem; 
         line-height: 70%; 
         font-weight: 100; 
-        margin-bottom: 15vh;
+        margin-bottom: 8vh;
     }
 
     .skills-list { 

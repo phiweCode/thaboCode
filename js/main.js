@@ -1,5 +1,9 @@
 const menuBtn = document.querySelector('.hamburger-menu');  
 
+const learnMore = document.querySelector('.btn') 
+
+const logo = document.querySelector('.logo-img'); 
+
 const dropdownMenu = document.querySelector('.dropdown-menu');  
 
 const removeMenu = document.querySelector('.dropdown-menu-toggle');
@@ -58,6 +62,14 @@ navLinks.forEach(link=> {
     }
 
   });
+}) 
+
+learnMore.addEventListener('click', function(){
+  scrollToPercentage(document.querySelector('.projects-title'), 15);
+}) 
+
+logo.addEventListener('click', function(){
+  scrollToPercentage(document.querySelector('.hero-section'), 15);
 }) 
 
 document.addEventListener("click", function(e){

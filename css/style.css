@@ -156,7 +156,18 @@
         font-weight: 900; 
         color: var(--main-bg) 
 
-    } 
+    }   
+
+    .hero-image-section {
+        display: flex; 
+        align-items: flex-start; 
+        justify-content: flex-start;
+        padding: 15px;
+    }
+
+    .hero-image-section  img{ 
+        width: 350px;
+    }
 
     /* About section */
 
@@ -186,6 +197,17 @@
         font-size: 1.2rem; 
         font-family: var(--font-family-inter);
 
+    } 
+
+
+    .download-resume {
+        background-color: var(--accent-color); 
+        text-decoration: none; 
+        padding: 10px 15px;
+        font-family: var(--font-family-inter);
+        font-size: 1.1rem; 
+        font-weight: 700; 
+        color: var(--main-bg)
     }
 
 
@@ -226,6 +248,12 @@
 
 
     /* project section */ 
+
+    .fa-arrow-right-long {
+        color: white; 
+        margin-right: 15px; 
+        font-size: 1.2rem;
+    }
     
     .projects-section {
         display: grid; 
@@ -294,6 +322,12 @@
         padding: 10px 10px; 
         font-weight: 700; 
         border-radius: 5px;
+    } 
+
+    .fa-arrow-up-right-from-square { 
+  
+        color: var(--accent-color); 
+        font-size: 1.5rem;
     }
 
  
@@ -363,15 +397,28 @@
     #main-footer { 
         background-color: var(--main-bg); 
         padding: 15px;
-        position: fixed; 
-        bottom: 0; 
         width: 100%; 
-        display: flex; 
+        display: flex;  
+        flex-direction: column; 
         align-items: center;
         justify-content: center;
         font-family: var(--font-family-inter); 
         font-size: 1.1rem; 
         color: var(--accent-color);
+    }  
+
+    .social-media-links{ 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 5vh 
+    }
+
+    .social-media-links a i{ 
+        color: var(--accent-color);
+        font-size: 2rem;
     }
 
 }

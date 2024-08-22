@@ -40,16 +40,21 @@ navLinks.forEach(link=> {
     if(link.childNodes[0].classList.value === "home")
     {   
         scrollToPercentage(document.querySelector('.hero-section'), 15);
+         dropdownMenu.classList.remove('menu-active');
     }else if (link.childNodes[0].classList.value === "about")
     {
       scrollToPercentage(document.querySelector('.about-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
     }else if (link.childNodes[0].classList.value === "skills")
     {
       scrollToPercentage(document.querySelector('.skills-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
     }else if (link.childNodes[0].classList.value ==="projects"){
       scrollToPercentage(document.querySelector('.projects-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
     }else if (link.childNodes[0].classList.value ==="contacts"){
       scrollToPercentage(document.querySelector('.contact-me-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
     }
 
   });

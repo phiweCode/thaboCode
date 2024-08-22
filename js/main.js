@@ -58,4 +58,14 @@ navLinks.forEach(link=> {
     }
 
   });
+}) 
+
+document.addEventListener("click", function(e){
+
+  const isClickInside = dropdownMenu.contains(e.target) || menuBtn.contains(e.target); 
+
+  if (!isClickInside) {
+    dropdownMenu.classList.remove('menu-active');
+  }
+
 })

@@ -21,6 +21,7 @@ removeMenu.addEventListener('click', function() {
 // menu scroll events 
  
 let navLinks = document.querySelectorAll('.nav-link-items-m'); 
+let navLinksD = document.querySelectorAll('.nav-link-items-d'); 
 
 console.log(navLinks[0].childNodes[0].classList.value)  
 
@@ -37,6 +38,34 @@ function scrollToPercentage(element, percentage) {
 
 
 navLinks.forEach(link=> { 
+  link.addEventListener('click', function() { 
+
+    console.log(link.childNodes[0].classList.value)
+
+    if(link.childNodes[0].classList.value === "home")
+    {   
+        scrollToPercentage(document.querySelector('.hero-section'), 15);
+         dropdownMenu.classList.remove('menu-active');
+    }else if (link.childNodes[0].classList.value === "about")
+    {
+      scrollToPercentage(document.querySelector('.about-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
+    }else if (link.childNodes[0].classList.value === "skills")
+    {
+      scrollToPercentage(document.querySelector('.skills-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
+    }else if (link.childNodes[0].classList.value ==="projects"){
+      scrollToPercentage(document.querySelector('.projects-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
+    }else if (link.childNodes[0].classList.value ==="contacts"){
+      scrollToPercentage(document.querySelector('.contact-me-title'), 15);
+       dropdownMenu.classList.remove('menu-active');
+    }
+
+  });
+}) 
+
+navLinksD.forEach(link=> { 
   link.addEventListener('click', function() { 
 
     console.log(link.childNodes[0].classList.value)

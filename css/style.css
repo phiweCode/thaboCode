@@ -187,9 +187,10 @@
 
     .about-section { 
       
-        height: 80vh; 
+        height: 100vh; 
         display: grid; 
         align-items: center;
+        margin: 10vh 0;
     } 
 
     .about-content-container { 
@@ -1923,7 +1924,7 @@
         gap: 2vh;
     } 
 
-    
+
 
     .project-title  {
         font-size: 1.2rem; 

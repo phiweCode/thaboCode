@@ -273,7 +273,9 @@
       <article class="contact-me-form">
         <!-- Contact form here -->
 
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="e3f6418e-d41e-4d80-9bbe-cecb13e4ce40">
 
           <div class="form-row">
             <article class="form-group">
@@ -293,9 +295,10 @@
 
        
             <article class="form-group">
-              <textarea name="message" placeholder="Message" rows="5" cols="30"></textarea>
+              <textarea required name="message" placeholder="Message" rows="5" cols="30"></textarea>
             </article>
       
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
     
             <article class="form-group">

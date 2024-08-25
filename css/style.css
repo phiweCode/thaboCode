@@ -27,7 +27,7 @@
 
 
 /*  mobile styles*/
-@media (max-width: 594px)  {
+@media (max-width: 594px) {
 
 
     /*Header logo*/
@@ -41,7 +41,7 @@
     }
 
     .hamburger-menu div {
-        background-color: #ff9696;
+        background-color:  var(--accent-color);
         height: 5px;
         width: 30px;
         z-index: 999; 
@@ -180,7 +180,7 @@
     }
 
     .hero-image-section  img{ 
-        width: 450px;
+        width: 350px;
     }
 
     /* About section */
@@ -1918,10 +1918,12 @@
     .projects-display { 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr ));
-        align-items: center; 
-        justify-content: center; 
+        align-items: start; 
+        justify-content: start; 
         gap: 2vh;
     } 
+
+    
 
     .project-title  {
         font-size: 1.2rem; 

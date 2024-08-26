@@ -1,11 +1,7 @@
 const menuBtn = document.querySelector(".hamburger-menu");
-
 const learnMore = document.querySelector(".btn");
-
 const logo = document.querySelector(".logo-img");
-
 const dropdownMenu = document.querySelector(".dropdown-menu");
-
 const removeMenu = document.querySelector(".dropdown-menu-toggle");
 
 menuBtn.addEventListener("click", function () {
@@ -16,12 +12,10 @@ removeMenu.addEventListener("click", function () {
   dropdownMenu.classList.remove("menu-active");
 });
 
-// menu scroll events
 
+// menu scroll events
 let navLinks = document.querySelectorAll(".nav-link-items-m");
 let navLinksD = document.querySelectorAll(".nav-link-items-d");
-
-console.log(navLinks[0].childNodes[0].classList.value);
 
 function scrollToPercentage(element, percentage) {
   const elementTop = element.getBoundingClientRect().top + window.scrollY;
@@ -36,7 +30,6 @@ function scrollToPercentage(element, percentage) {
 
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
-    console.log(link.childNodes[0].classList.value);
 
     if (link.childNodes[0].classList.value === "home") {
       scrollToPercentage(document.querySelector(".hero-section"), 15);
@@ -59,7 +52,6 @@ navLinks.forEach((link) => {
 
 navLinksD.forEach((link) => {
   link.addEventListener("click", function () {
-    console.log(link.childNodes[0].classList.value);
 
     if (link.childNodes[0].classList.value === "home") {
       scrollToPercentage(document.querySelector(".hero-section"), 15);

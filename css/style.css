@@ -202,7 +202,7 @@
     .about-title { 
         color: var(--accent-color); 
         font-family: var(--font-family-inter); 
-        font-size: 4rem; 
+        font-size: 3.5rem !important; 
         line-height: 105%; 
         font-weight: 100; 
         margin-bottom: 5vh;
@@ -240,7 +240,7 @@
     .skills-title  {
         color: var(--accent-color); 
         font-family: var(--font-family-inter); 
-        font-size: 4rem; 
+        font-size: 3.5rem !important; 
         line-height: 95%; 
         font-weight: 100; 
         margin-bottom: 8vh;
@@ -283,7 +283,7 @@
     .projects-title {
         color: var(--accent-color); 
         font-family: var(--font-family-inter); 
-        font-size: 4rem; 
+        font-size: 3.5rem !important; 
         line-height: 70%; 
         font-weight: 100; 
         margin-bottom: 10vh;
@@ -371,7 +371,7 @@
     .contact-me-title { 
         color: var(--accent-color); 
         font-family: var(--font-family-inter); 
-        font-size: 4rem; 
+        font-size: 3.5rem !important; 
         line-height: 140%; 
         font-weight: 100; 
         margin-bottom: 5vh;
@@ -381,11 +381,11 @@
         margin-bottom: 5vh; 
         font-size: 1.2rem; 
         font-family: var(--font-family-inter); 
-        height: 90vh; 
+        height: 100vh; 
     }   
 
     .contact-me-form form { 
-        max-width: 100vw;
+        max-width: 90vw;
     }
 
     .forms-image { 

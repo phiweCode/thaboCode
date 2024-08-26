@@ -1,333 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-svg-core/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/free-solid-svg-icons/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/free-regular-svg-icons/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/free-brands-svg-icons/styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+    <title>thaboCode</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-svg-core/styles.css">
-  <link rel="stylesheet" href="node_modules/@fortawesome/free-solid-svg-icons/styles.css">
-  <link rel="stylesheet" href="node_modules/@fortawesome/free-regular-svg-icons/styles.css">
-  <link rel="stylesheet" href="node_modules/@fortawesome/free-brands-svg-icons/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="./css/style.css" /> 
-  <script src="./js/main.js" defer></script>
-  <title>thaboCode</title>
-</head>
+  <body>
+    <!-- Header -->
 
-<body>
-  <!-- Header -->
+    <header id="main-header">
+      <!-- Logo -->
+      <article class="logo-wrapper">
+        <img src="./images/logo3.svg" alt="logo" class="logo-img" />
+      </article>
 
-  <header id="main-header">
-    <!-- Logo -->
-    <article class="logo-wrapper">
-      <img src="./images/logo3.svg"  alt="logo" class="logo-img" />
-    </article>
+      <!-- Main nav bar-->
+      <nav id="main-nav">
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li class="nav-link-items-d">
+            <a href="#home" class="home">Home</a>
+          </li>
+          <li class="nav-link-items-d">
+            <a href="#about" class="about">About</a>
+          </li>
+          <li class="nav-link-items-d">
+            <a href="#services" class="skills">Skills</a>
+          </li>
+          <li class="nav-link-items-d">
+            <a href="#contact" class="projects">Projects</a>
+          </li>
+          <li class="nav-link-items-d">
+            <a href="#contact" class="contacts">Contact me</a>
+          </li>
+        </ul>
 
-    <!-- Main nav bar-->
-    <nav id="main-nav">
-      <!-- Navigation links -->
-      <ul class="nav-links">
-        <li class="nav-link-items-d"><a href="#home" class="home">Home</a></li>
-        <li class="nav-link-items-d"><a href="#about" class="about">About</a></li>
-        <li class="nav-link-items-d"><a href="#services" class="skills">Skills</a></li>
-        <li class="nav-link-items-d"><a href="#contact" class="projects" >Projects</a></li>
-        <li class="nav-link-items-d"><a href="#contact" class="contacts">Contact me</a></li>
-      </ul>
-
-      <!-- Hamburger menu icon -->
-      <div class="hamburger-menu ">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-
-      <!-- Dropdown menu -->
-      <div class="dropdown-menu"> 
-
-        <div class="dropdown-menu-toggle">
+        <!-- Hamburger menu icon -->
+        <div class="hamburger-menu">
+          <div></div>
           <div></div>
           <div></div>
         </div>
 
-        <ul class="nav-links-m">
-          <li class="nav-link-items-m"><a href="#home" class="home">Home</a></li>
-          <li class="nav-link-items-m"><a href="#about" class="about">About</a></li>
-          <li class="nav-link-items-m"><a href="#services" class="skills">Skills</a></li>
-          <li class="nav-link-items-m"><a href="#services" class="projects">projects</a></li>
-          <li class="nav-link-items-m"><a href="#contact" class="contacts">Contact me</a></li>
-        </ul>
-      </div>
-      
-    </nav>
-
-  </header>
-
-  <!-- pages -->
-
-  <!-- Hero section -->
-  <section class="hero-section">
-    <section class="hero-content-container">
-      <h1> I AM  THABO SIPHIWE MNGOMA AND I  AM A FRONT-END WEB DEVELOPER. </h1>
-      <p>
-        I have a passion for creating & developng engaging web applications. I am well versed with the entire product development cycle from ideation to deployment. Learn more about me & what I have done in the past.
-      </p>
-      <a class="btn">See projects</a>
-    </section> 
-    <section class="hero-image-section"> 
-      <img src="./images/hero-img.png" alt="hero-img" class="hero-img" />
-    </section>
-  </section>
-
-  <!-- About section -->
-  <section class="about-section">
-    <section class="about-content-container">
-      <article class="about-title">
-        <h2><span class="arrow"></span>About me</h2>
-      </article>
-
-      <article class="about-description">
-        <p>
-          I am a frontend web developer and an aspiring full stack web developer. I have quite a long journey learning different tools to use for developing software applications. From terminal based programs with low level programming languages to web programming languages I am life long learner for technology. 
-        </p>
-        <br/>
-        <p>
-          I have started my web development journey since 2021 and I have since been learning to specialize in web technologies such as HTML, CSS and JavaScript. As I improved using these programming tools, I was confident enough to adopt a few more technologies that fit my ambitions to create even better solutions using these technologies. I am continuosly learning even more technologies whilst getter better at what I already know. 
-        </p>
-      </article> 
-
-      <a href="./Thabo Siphiwe Mngoma.pdf"  download="Thabo Siphiwe Mngoma.pdf" class="download-resume">
-        Download my resume
-      </a>
-    </section>
-  </section>
-
-  <!-- skills section -->
-  <section class="skills-section">
-    <section class="skills-content-container">
-      <article class="skills-title">
-        <h2><span class="arrow"></span>skills</h2>
-      </article>
-
-      <article class="skills-icon-display">
-        <ul class="skills-list">
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" aria-label="html icon" class="skills-img">HTML</li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" aria-label="css icon" class="skills-img">CSS</li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  aria-label="javascript icon" class="skills-img">JAVASCRIPT</li>
-          <li class="skills-item"><img  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" aria-label="bootstrap icon" class="skills-img">BOOTSTRAP</li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" aria-label="react icon" class="skills-img">REACT</li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg" aria-label="react-router-dom icon" class="skills-img">REACT ROUTER</li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" aria-label="Redux icon" class="skills-img">REDUX</li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" aria-label="Node js icon" class="skills-img">NODE JS</li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" aria-label="django icon" class="skills-img">DJANGO </li>
-          <li class="skills-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" aria-label="postgres icon" class="skills-img">POSTGRES </li>
-        </ul>
-      </article>
-    </section>
-  </section>
-
-  <!-- projects section-->
-
-  <section class="projects-section">
-    <section class="projects-content-container">
-      <article class="projects-title">
-        <h2>Projects</h2>
-      </article>
-
-      <article class="projects-display">
-        <!-- Project cards here --> 
-
-        <article class="project-card"> 
-          <article class="project-title"> 
-            <h3><i class="fa-solid fa-arrow-right-long"></i>Markdown Previewer</h3>
-          </article>
-          
-          <article class="project-thumbnail"> 
-            <img src="images/markdownpreviewer.png" height="50"  alt="project thumbnail" class="project-img" />
-          </article>
-
-          <article class="project-description">
-            <p>
-              This is a markdown previewer application. It takes markdown raw markdown syntax generates a preview next to the text editor. Moreover, you can also edit your markdown readily. 
-            </p>
-          </article>
-
-          <article class="project-tags">
-            <ul class="project-tags-list">
-              <li class="project-tag">JavaScript</li>
-              <li class="project-tag">HTML</li>
-              <li class="project-tag">CSS</li>
-              <li class="project-tag">SCSS</li>
-            </ul>
-
-            <article class="project-link"> 
-              <a href="https://phiwecode.github.io/Markdown_Previewer/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-          </article>
-
-        </article>
-
-        <article class="project-card"> 
-          <article class="project-title"> 
-            <h3><i class="fa-solid fa-arrow-right-long"></i>Mangata&Gallo store front</h3>
-          </article>
-          
-          <article class="project-thumbnail"> 
-            <img src="images/mangata&gallo.png" height="50"  alt="project thumbnail" class="project-img" />
-          </article>
-
-          <article class="project-description">
-            <p>
-              This is a ficticious ecommerce frontend web application for a store called mangata and gallo. 
-            </p>
-          </article>
-
-          <article class="project-tags">
-            <ul class="project-tags-list">
-              <li class="project-tag">HTML</li>
-              <li class="project-tag">CSS</li>
-              <li class="project-tag">JAVASCRIPT</li>
-            </ul>
-
-            <article class="project-link"> 
-              <a href="https://phiwecode.github.io/jewellery-store-/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-          </article>
-
-        </article>
-
-        <article class="project-card"> 
-          <article class="project-title"> 
-            <h3><i class="fa-solid fa-arrow-right-long"></i>Project Name</h3>
-          </article>
-          
-          <article class="project-thumbnail"> 
-            <img src="images/luckyshrubs.png" height="50"  alt="project thumbnail" class="project-img" />
-          </article>
-
-          <article class="project-description">
-            <p>
-              This project is a landing page for a ficticious organization that sells plants and offer related services.
-            </p>
-          </article>
-
-          <article class="project-tags">
-            <ul class="project-tags-list">
-              <li class="project-tag">HTML</li>
-              <li class="project-tag">CSS</li>
-              <li class="project-tag">JAVASCRIPT</li>
-            </ul>
-
-            <article class="project-link"> 
-              <a href="https://phiwecode.github.io/Landing-page-project/#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-          </article>
-
-        </article>
-
-        <article class="project-card"> 
-          <article class="project-title"> 
-            <h3><i class="fa-solid fa-arrow-right-long"></i>React technical documentation</h3>
-          </article>
-          
-          <article class="project-thumbnail"> 
-            <img src="./images/clone.png" height="50" alt="project thumbnail" class="project-img" />
-          </article>
-
-          <article class="project-description">
-            <p>
-              This is a clone project of an older react documentation page. 
-            </p>
-          </article>
-
-          <article class="project-tags">
-            <ul class="project-tags-list">
-              <li class="project-tag">HTML</li>
-              <li class="project-tag">CSS</li>
-              <li class="project-tag">JAVASCRIPT</li>
-            </ul>
-
-            <article class="project-link"> 
-              <a href="https://phiwecode.github.io/Freecodecamp-technical-documentation-project/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </article>
-          </article>
-
-        </article>
-
-      </article>
-
-    </section>
-  </section>
-
-  <!-- Contact me section -->
-  <section class="contact-me-section">
-    <section class="contact-me-content-container">
-
-      <article class="contact-me-title">
-        <h2><span class="arrow"></span>Contact Me</h2>
-      </article>
-
-      <article class="contact-me-form">
-        <!-- Contact form here -->
-
-        <form action="https://api.web3forms.com/submit" method="POST">
-
-          <input type="hidden" name="access_key" value="e3f6418e-d41e-4d80-9bbe-cecb13e4ce40">
-
-          <div class="form-row">
-            <article class="form-group">
-              <input type="text" name="fname" placeholder="First Name" />
-            </article>
-
-            <article class="form-group">
-              <input type="text" name="fname" placeholder="Last Name" />
-            </article>
+        <!-- Dropdown menu -->
+        <div class="dropdown-menu">
+          <div class="dropdown-menu-toggle">
+            <div></div>
+            <div></div>
           </div>
 
-    
+          <ul class="nav-links-m">
+            <li class="nav-link-items-m">
+              <a href="#home" class="home">Home</a>
+            </li>
+            <li class="nav-link-items-m">
+              <a href="#about" class="about">About</a>
+            </li>
+            <li class="nav-link-items-m">
+              <a href="#services" class="skills">Skills</a>
+            </li>
+            <li class="nav-link-items-m">
+              <a href="#services" class="projects">projects</a>
+            </li>
+            <li class="nav-link-items-m">
+              <a href="#contact" class="contacts">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- pages -->
+
+    <!-- Hero section -->
+    <section class="hero-section">
+      <section class="hero-content-container">
+        <h1>I AM THABO SIPHIWE MNGOMA AND I AM A FRONT-END WEB DEVELOPER.</h1>
+        <p>
+          I have a passion for creating & developng engaging web applications. I
+          am well versed with the entire product development cycle from ideation
+          to deployment. Learn more about me & what I have done in the past.
+        </p>
+        <a class="btn">See projects</a>
+      </section>
+      <section class="hero-image-section">
+        <img src="./images/hero-img.png" alt="hero-img" class="hero-img" />
+      </section>
+    </section>
+
+    <!-- About section -->
+    <section class="about-section">
+      <section class="about-content-container">
+        <article class="about-title">
+          <h2><span class="arrow"></span>About me</h2>
+        </article>
+
+        <article class="about-description">
+          <p>
+            I am a frontend web developer and an aspiring full stack web
+            developer. I have quite a long journey learning different tools to
+            use for developing software applications. From terminal based
+            programs with low level programming languages to web programming
+            languages I am life long learner for technology.
+          </p>
+          <br />
+          <p>
+            I have started my web development journey since 2021 and I have
+            since been learning to specialize in web technologies such as HTML,
+            CSS and JavaScript. As I improved using these programming tools, I
+            was confident enough to adopt a few more technologies that fit my
+            ambitions to create even better solutions using these technologies.
+            I am continuosly learning even more technologies whilst getter
+            better at what I already know.
+          </p>
+        </article>
+
+        <a
+          href="./Thabo Siphiwe Mngoma.pdf"
+          download="Thabo Siphiwe Mngoma.pdf"
+          class="download-resume"
+        >
+          Download my resume
+        </a>
+      </section>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills-section">
+      <section class="skills-content-container">
+        <article class="skills-title">
+          <h2><span class="arrow"></span>skills</h2>
+        </article>
+
+        <article class="skills-icon-display">
+          <ul class="skills-list">
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                aria-label="html icon"
+                class="skills-img"
+              />HTML
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                aria-label="css icon"
+                class="skills-img"
+              />CSS
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                aria-label="javascript icon"
+                class="skills-img"
+              />JAVASCRIPT
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                aria-label="bootstrap icon"
+                class="skills-img"
+              />BOOTSTRAP
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                aria-label="react icon"
+                class="skills-img"
+              />REACT
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg"
+                aria-label="react-router-dom icon"
+                class="skills-img"
+              />REACT ROUTER
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                aria-label="Redux icon"
+                class="skills-img"
+              />REDUX
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                aria-label="Node js icon"
+                class="skills-img"
+              />NODE JS
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+                aria-label="django icon"
+                class="skills-img"
+              />DJANGO
+            </li>
+            <li class="skills-item">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+                aria-label="postgres icon"
+                class="skills-img"
+              />POSTGRES
+            </li>
+          </ul>
+        </article>
+      </section>
+    </section>
+
+    <!-- projects section-->
+
+    <section class="projects-section">
+      <section class="projects-content-container">
+        <article class="projects-title">
+          <h2>Projects</h2>
+        </article>
+
+        <article class="projects-display">
+          <!-- Project cards here -->
+
+          <article class="project-card">
+            <article class="project-title">
+              <h3>
+                <i class="fa-solid fa-arrow-right-long"></i>Markdown Previewer
+              </h3>
+            </article>
+
+            <article class="project-thumbnail">
+              <img
+                src="images/markdownpreviewer.png"
+                height="50"
+                alt="project thumbnail"
+                class="project-img"
+              />
+            </article>
+
+            <article class="project-description">
+              <p>
+                This is a markdown previewer application. It takes markdown raw
+                markdown syntax generates a preview next to the text editor.
+                Moreover, you can also edit your markdown readily.
+              </p>
+            </article>
+
+            <article class="project-tags">
+              <ul class="project-tags-list">
+                <li class="project-tag">JavaScript</li>
+                <li class="project-tag">HTML</li>
+                <li class="project-tag">CSS</li>
+                <li class="project-tag">SCSS</li>
+              </ul>
+
+              <article class="project-link">
+                <a
+                  href="https://phiwecode.github.io/Markdown_Previewer/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </article>
+            </article>
+          </article>
+
+          <article class="project-card">
+            <article class="project-title">
+              <h3>
+                <i class="fa-solid fa-arrow-right-long"></i>Mangata&Gallo store
+                front
+              </h3>
+            </article>
+
+            <article class="project-thumbnail">
+              <img
+                src="images/mangata&gallo.png"
+                height="50"
+                alt="project thumbnail"
+                class="project-img"
+              />
+            </article>
+
+            <article class="project-description">
+              <p>
+                This is a ficticious ecommerce frontend web application for a
+                store called mangata and gallo.
+              </p>
+            </article>
+
+            <article class="project-tags">
+              <ul class="project-tags-list">
+                <li class="project-tag">HTML</li>
+                <li class="project-tag">CSS</li>
+                <li class="project-tag">JAVASCRIPT</li>
+              </ul>
+
+              <article class="project-link">
+                <a
+                  href="https://phiwecode.github.io/jewellery-store-/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </article>
+            </article>
+          </article>
+
+          <article class="project-card">
+            <article class="project-title">
+              <h3><i class="fa-solid fa-arrow-right-long"></i>Project Name</h3>
+            </article>
+
+            <article class="project-thumbnail">
+              <img
+                src="images/luckyshrubs.png"
+                height="50"
+                alt="project thumbnail"
+                class="project-img"
+              />
+            </article>
+
+            <article class="project-description">
+              <p>
+                This project is a landing page for a ficticious organization
+                that sells plants and offer related services.
+              </p>
+            </article>
+
+            <article class="project-tags">
+              <ul class="project-tags-list">
+                <li class="project-tag">HTML</li>
+                <li class="project-tag">CSS</li>
+                <li class="project-tag">JAVASCRIPT</li>
+              </ul>
+
+              <article class="project-link">
+                <a
+                  href="https://phiwecode.github.io/Landing-page-project/#"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </article>
+            </article>
+          </article>
+
+          <article class="project-card">
+            <article class="project-title">
+              <h3>
+                <i class="fa-solid fa-arrow-right-long"></i>React technical
+                documentation
+              </h3>
+            </article>
+
+            <article class="project-thumbnail">
+              <img
+                src="./images/clone.png"
+                height="50"
+                alt="project thumbnail"
+                class="project-img"
+              />
+            </article>
+
+            <article class="project-description">
+              <p>
+                This is a clone project of an older react documentation page.
+              </p>
+            </article>
+
+            <article class="project-tags">
+              <ul class="project-tags-list">
+                <li class="project-tag">HTML</li>
+                <li class="project-tag">CSS</li>
+                <li class="project-tag">JAVASCRIPT</li>
+              </ul>
+
+              <article class="project-link">
+                <a
+                  href="https://phiwecode.github.io/Freecodecamp-technical-documentation-project/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </article>
+            </article>
+          </article>
+        </article>
+      </section>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact-me-section">
+      <section class="contact-me-content-container">
+        <article class="contact-me-title">
+          <h2><span class="arrow"></span>Contact Me</h2>
+        </article>
+
+        <article class="contact-me-form">
+          <!-- Contact form here -->
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="e3f6418e-d41e-4d80-9bbe-cecb13e4ce40"
+            />
+
+            <div class="form-row">
+              <article class="form-group">
+                <input type="text" name="fname" placeholder="First Name" />
+              </article>
+
+              <article class="form-group">
+                <input type="text" name="fname" placeholder="Last Name" />
+              </article>
+            </div>
+
             <article class="form-group">
               <input type="email" name="email" placeholder="Email" />
             </article>
-      
 
-       
             <article class="form-group">
-              <textarea required name="message" placeholder="Message" rows="5" cols="30"></textarea>
+              <textarea
+                required
+                name="message"
+                placeholder="Message"
+                rows="5"
+                cols="30"
+              ></textarea>
             </article>
-      
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-    
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
             <article class="form-group">
               <input type="submit" value="Submit" />
             </article>
-        
+          </form>
 
-        </form> 
-
-        <article class="forms-image"> 
-          <img height="200" src="./images/socials.png" />
+          <article class="forms-image">
+            <img height="200" src="./images/socials.png" />
+          </article>
         </article>
-
-      </article>
+      </section>
     </section>
-  </section>
 
-  <!-- Footer -->
-  <footer id="main-footer"> 
+    <!-- Footer -->
+    <footer id="main-footer">
+      <article class="social-media-links">
+        <a
+          href="https://www.linkedin.com/in/thabo-siphiwe-mngoma/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://x.com/BusinessThabo" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://github.com/phiweCode" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.freecodecamp.org/codePhiwe" target="_blank"
+          ><i class="fa-brands fa-free-code-camp"></i
+        ></a>
+      </article>
 
-    <article class="social-media-links"> 
-      <a href="https://www.linkedin.com/in/thabo-siphiwe-mngoma/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://x.com/BusinessThabo" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://github.com/phiweCode" target="_blank"><i class="fa-brands fa-github"></i></a> 
-      <a href="https://www.freecodecamp.org/codePhiwe" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
-    </article>
-  
-    <p> &copy; 2024 thaboCode. All rights reserved.</p>
-  </footer>
-</body>
-
+      <p>&copy; 2024 thaboCode. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

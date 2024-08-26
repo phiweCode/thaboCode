@@ -762,6 +762,10 @@
     font-size: 1.2rem;
     font-family: var(--font-family-inter);
     height: 100vh;
+  } 
+
+  .contact-me-form form { 
+    max-width: 95vw !important;
   }
 
   .forms-image {

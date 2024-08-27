@@ -112,7 +112,7 @@
   .dropdown-menu ul li a {
     text-decoration: none !important;
     font-family: var(--font-family-inter);
-    font-size: 900;
+    font-weight: 900;
     margin-left: 15px;
     font-size: 0.9rem;
     color: var(--accent-color);
@@ -523,7 +523,7 @@
   .dropdown-menu ul li a {
     text-decoration: none !important;
     font-family: var(--font-family-inter);
-    font-size: 900;
+    font-weight: 900;
     margin-left: 15px;
     font-size: 0.9rem;
     color: var(--accent-color);
@@ -934,7 +934,7 @@
   .dropdown-menu ul li a {
     text-decoration: none !important;
     font-family: var(--font-family-inter);
-    font-size: 900;
+    font-weight: 900;
     margin-left: 15px;
     font-size: 0.9rem;
     color: var(--accent-color);
@@ -1341,7 +1341,7 @@
   .dropdown-menu ul li a {
     text-decoration: none !important;
     font-family: var(--font-family-inter);
-    font-size: 900;
+    font-weight: 900;
     margin-left: 15px;
     font-size: 1.2rem;
     color: var(--accent-color);

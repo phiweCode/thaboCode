@@ -12,7 +12,6 @@ removeMenu.addEventListener("click", function () {
   dropdownMenu.classList.remove("menu-active");
 });
 
-
 // menu scroll events
 let navLinks = document.querySelectorAll(".nav-link-items-m");
 let navLinksD = document.querySelectorAll(".nav-link-items-d");
@@ -26,48 +25,48 @@ function scrollToPercentage(element, percentage) {
     top: scrollToPosition,
     behavior: "smooth",
   });
+
+  console.log(`This the element ${element} \n `)
 }
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-
-    if (link.childNodes[0].classList.value === "home") {
-      scrollToPercentage(document.querySelector(".hero-section"), 15);
-      dropdownMenu.classList.remove("menu-active");
-    } else if (link.childNodes[0].classList.value === "about") {
-      scrollToPercentage(document.querySelector(".about-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
-    } else if (link.childNodes[0].classList.value === "skills") {
-      scrollToPercentage(document.querySelector(".skills-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
-    } else if (link.childNodes[0].classList.value === "projects") {
-      scrollToPercentage(document.querySelector(".projects-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
-    } else if (link.childNodes[0].classList.value === "contacts") {
-      scrollToPercentage(document.querySelector(".contact-me-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
-    }
-  });
-});
+// navLinks.forEach((link) => {
+//   link.addEventListener("click", function () {
+//     if (link.childNodes[0].classList.value === "home") {
+//       scrollToPercentage(document.querySelector(".hero-section"), 15);
+//       dropdownMenu.classList.remove("menu-active");
+//     } else if (link.childNodes[0].classList.value === "about") {
+//       scrollToPercentage(document.querySelector(".about-title"), 15);
+//       dropdownMenu.classList.remove("menu-active");
+//     } else if (link.childNodes[0].classList.value === "skills") {
+//       scrollToPercentage(document.querySelector(".skills-title"), 15);
+//       dropdownMenu.classList.remove("menu-active");
+//     } else if (link.childNodes[0].classList.value === "projects") {
+//       scrollToPercentage(document.querySelector(".projects-title"), 15);
+//       dropdownMenu.classList.remove("menu-active");
+//     } else if (link.childNodes[0].classList.value === "contacts") {
+//       scrollToPercentage(document.querySelector(".contact-me-title"), 15);
+//       dropdownMenu.classList.remove("menu-active");
+//     }
+//   });
+// });
 
 navLinksD.forEach((link) => {
   link.addEventListener("click", function () {
 
+    console.log("Clicked element: ",link.childNodes[0])
+
     if (link.childNodes[0].classList.value === "home") {
       scrollToPercentage(document.querySelector(".hero-section"), 15);
-      dropdownMenu.classList.remove("menu-active");
     } else if (link.childNodes[0].classList.value === "about") {
       scrollToPercentage(document.querySelector(".about-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
     } else if (link.childNodes[0].classList.value === "skills") {
       scrollToPercentage(document.querySelector(".skills-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
     } else if (link.childNodes[0].classList.value === "projects") {
       scrollToPercentage(document.querySelector(".projects-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
     } else if (link.childNodes[0].classList.value === "contacts") {
-      scrollToPercentage(document.querySelector(".contact-me-title"), 15);
-      dropdownMenu.classList.remove("menu-active");
+      //scrollToPercentage(document.querySelector(".contact-me-title"), 15);  
+      console.log("contacts have been clicked")
+      document.querySelector(".contact-me-section").scrollIntoView({ behavior: "smooth", block: "start" })
     }
   });
 });
